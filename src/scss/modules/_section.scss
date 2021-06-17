@@ -1,0 +1,370 @@
+// 1ère Section 
+.secShop{
+    background-color: #F3F3F3;
+    margin-top: -4rem;
+    display: flex;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+    .divShop{
+        display: flex;
+        width: 80%;
+        padding-left: 14rem;
+        .secUnGauche{
+            display: flex;
+            flex-direction: column;
+            margin-top: 7rem;
+            
+            h1{
+                color: rgb(238, 71, 71);
+                font-size: 3rem;
+            }
+            img{
+                width: 35rem;
+            }
+            p{
+                color: rgb(128, 126, 126);
+            }
+            button{
+                background-color: rgb(238, 71, 71);
+                color: white;
+                border: none;
+                height: 3rem;
+                width: 10rem;
+                border-radius: 30px;
+                font-size: 1rem;
+            }
+        }
+        .imgDroite{
+            img{
+                width: 28rem;
+            }
+        }
+    }
+
+}
+
+// 2ème Section
+.secProduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .productHaut{
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        padding-top: 8vh;
+        .livingRoom{
+            background-image: url(../img/services/service-1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 33%;
+            font-size: large;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 2vh;
+            .ligne{
+                width: 40vh;
+                height: 2.5px;
+                background-color: white;
+            }
+        }
+        .saleItems{
+            background-image: url(../img/services/service-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 33%;
+            font-size: large;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 2vh;
+            .ligne{
+                width: 40vh;
+                height: 2.5px;
+                background-color: white;
+            }
+        }
+        .clothes{
+            background-image: url(../img/services/slider-3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 33%;
+            font-size: large;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 2vh;
+            .ligne{
+                width: 40vh;
+                height: 2.5px;
+                background-color: white;
+            }
+        }
+    }
+    h4{
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+        font-weight: bold;
+        font-size: 4vh;
+    }
+    .ligne1{
+        display: flex;
+        .card1{
+            margin: 2.5vh;
+            .card{
+                border: none;
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .card-text{
+                        color: red;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .card12{
+            margin: 2.5vh;
+            .card{
+                border: none;
+                .card-body{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    .sale{
+                        background-color: rgb(238, 71, 71);
+                        height: 3.5rem;
+                        width: 3.5rem;
+                        border-radius: 50%;
+                        border: none;
+                        color: white;
+                        cursor: initial;
+                    } 
+                    .card-text{
+                        color: red;
+                        font-weight: bold;
+                        span{
+                            color: grey;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+        .card21{
+            margin: 2.5vh;
+            .card{
+                border: none;
+                .card-body{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    .sale{
+                        background-color: rgb(238, 71, 71);
+                        height: 3.5rem;
+                        width: 3.5rem;
+                        border-radius: 50%;
+                        border: none;
+                        color: white;
+                        cursor: initial;
+                    }
+                    .card-text{
+                        color: red;
+                        font-weight: bold;
+                        span{
+                            color: grey;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+        .card33{
+            margin: 2.5vh;
+            .card{
+                border: none;
+                img{
+                    height: 14.2rem;
+                }
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .card-text{
+                        color: red;
+                        font-weight: bold;
+                        span{
+                            color: blue;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+        .card23{
+            margin: 2.5vh;
+            .card{
+                border: none;
+                img{
+                    height: 13rem;
+                }
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .card-text{
+                        color: red;
+                        font-weight: bold;
+                        span{
+                            color: grey;
+                            text-decoration: line-through; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 3ème section
+.secDiscover{
+    background-image: url(../img/cta-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 3rem;
+    }
+    button{
+        background-color: rgb(238, 71, 71);
+        color: white;
+        border: none;
+        margin-top: 1.5rem;
+        height: 2.5rem;
+        width: 9%;
+    }
+}
+
+// 4ème section
+.secHot{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    .divCaroussel{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        h3{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4vh;
+        }
+        .cardsCaroussel{
+            display: flex;
+        }
+    }
+}
+
+// 5ème section
+.secCheck{
+    padding-top: 7rem;
+    width: 100%;
+    .divCheck{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        .checkGauche{
+            background-color: rgb(235, 231, 231);
+            color: black;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            height: 23rem;
+            margin: 1rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            i{
+                margin-top: 2rem;
+                font-size: 2.3rem;
+                margin-bottom: 2rem;
+            }
+            h5{
+                margin-bottom: 2.3rem;
+            }
+            p{
+                width: 80%;
+                font-size: 1rem;
+                color: rgb(110, 109, 109);
+                margin-bottom: 2.5rem;
+            }
+            button{
+                background-color: rgb(70, 69, 69);
+                color: white;
+                height: 2.4rem;
+                width: 8rem;
+                border-radius: 4px;
+            }
+            
+        }
+        .checkCentre{
+            background-color: rgb(238, 71, 71);
+            color: white;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            height: 23rem;
+            margin: 1rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            i{
+                margin-top: 2rem;
+                font-size: 2.3rem;
+                margin-bottom: 2rem;
+            }
+            h5{
+                margin-bottom: 2.3rem;
+            }
+            p{
+                width: 80%;
+                font-size: 1rem;
+                color: rgb(231, 231, 231);
+                margin-bottom: 2.5rem;
+            }
+            button{
+                border-radius: 4px;
+                border: none;
+                height: 2.4rem;
+                width: 8rem;
+                border-radius: 4px;
+            }
+
+        }
+    }
+}

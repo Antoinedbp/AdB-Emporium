@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    justify-content: center;
+    img{
+        margin-bottom: 5rem;
+    }
+    .maNav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                display: flex;
+                width: 7rem;
+                justify-content: space-around;
+                margin: 0;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .mode{
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            .blanc{
+                height: 0.8rem;
+                width: 1rem;
+                border-radius: 5px;
+                background-color: white;
+                cursor: pointer;
+                border: lightgray 2px solid;
+
+            }
+            .noir{
+                height: 0.8rem;
+                width: 1rem;
+                border-radius: 5px;
+                background-color: black;
+                cursor: pointer;
+                border: lightgray 2px solid;
+            }
+        }
+        .connexion{
+            background-color: grey;
+            color: white;
+            font-size: small;
+            height: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
