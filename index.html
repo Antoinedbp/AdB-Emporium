@@ -5,30 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/app.css">
-    <title>Emporium</title>
+    <title>emporium.</title>
 </head>
-<body>
+<body class="bg-white">
+
+    <!-- Formulaire -->
+    <div id="formular">
+        <div class="hautForm">
+            <img src="./public/img/logo.png" alt="">
+            <button class="fermeture">X</button>
+        </div>
+
+        <div class="btnForm">
+            <button id="connect" style="margin-right: 2%">Connexion</button>
+            <button id="inscription">Inscription</button>
+        </div>
+
+        <div class="corpsForm">
+            <span class="eMail">Email Address *</span>
+            <input type="text" name="mail" id="mail" placeholder="abcdef@gmail.com">
+            <p>We'll never share your email with anyone else.</p>
+
+            <span class="password">Password *</span>
+            <input type="text" name="password" id="password" placeholder="*******">
+
+            <div class="divInscription">
+
+                <span>Confirm Your Password *</span>
+                <input type="text" name="password" id="password2" placeholder="********">
+
+                <div class="divHf">
+                    <input type="checkbox"><span>Homme</span>
+                    <input type="checkbox"><span>Femme</span>
+                </div>
+
+            </div>
+
+            <div class="checkMe">
+                <input type="checkbox" id="checkMeOut"><span>Check me out</span>
+            </div>
+            <p class="champ">* Champs Obligatoire</p>
+
+            <button class="submit">Submit</button>
+
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+                <i class="fas fa-laptop-code"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
     <header>
-        <nav>
-            <img src="./public/img/logo.png" alt="Logo Emporium">
-            <div class="maNav">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PRODUCT</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">ELEMENTS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+        <nav class="bg-white d-flex flex-column" id="navL">
+            <h1 class="text-dark tit">emporium.</h1>
+            <div class="maNav bg-white d-flex">
+                <ul class="bg-white">
+                    <li><a class="text-dark" href="#myNav">HOME</a></li>
+                    <li><a class="text-dark" href="#products">PRODUCT</a></li>
+                    <li><a class="text-dark" href="#">BLOG</a></li>
+                    <li><a class="text-dark" href="#element">ELEMENTS</a></li>
+                    <li><a class="text-dark" href="#about">ABOUT</a></li>
+                    <li><a class="text-dark" href="#">CONTACT</a></li>
                 </ul>
                 <div class="mode">
-                    <button class="blanc"></button>
-                    <button class="noir"></button>
+                    <button id="day" class="blanc"></button>
+                    <button id="night" class="noir"></button>
                 </div>
-                <button class="connexion">CONNEXION</button>
+                <button class="connexion" id="buttonCo" onclick="">CONNEXION</button>
             </div>
         </nav>
     </header>
-    <section class="secShop">
+
+
+    <!-- 1ère section -->
+    <section class="secShop" id="secShop">
         <div class="divShop">
             <div class="secUnGauche">
                 <h1>Shop at</h1>
@@ -41,7 +94,9 @@
             </div>
         </div>
     </section>
-    <section class="secProduct">
+
+    <!-- 2ème section: Produits -->
+    <section class="secProduct bg-white" id="products">
         <div class="productHaut">
             <div class="livingRoom">
                 <h3>Living Room</h3>
@@ -56,13 +111,13 @@
                 <div class="ligne"></div>
             </div>
         </div>
-        <h4>Recents Products</h4>
+        <h4 class="text-dark">Recents Products</h4>
         <div class="ligne1">
             <div class="card1">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Luxury Sofa</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Luxury Sofa</h5>
                       <p class="card-text">$600.00</p>
                     </div>
                 </div>
@@ -70,11 +125,11 @@
             <div class="card12">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products_mini/product-gloves.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-white">
                         <button class="sale">SALE!</button>   
                         <div class="txtCard">
-                            <h5 class="card-title">Leather Gloves</h5>
-                            <p class="card-text"><span>$34.00</span>$27.00</p>
+                            <h5 class="card-title text-dark">Leather Gloves</h5>
+                            <p class="card-text"><span>$34.00</span> $27.00</p>
                         </div>
                     </div>
                 </div>
@@ -82,8 +137,8 @@
             <div class="card1">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products_mini/product-cups.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Colorful Bowl</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Colorful Bowl</h5>
                       <p class="card-text">$18.00</p>
                     </div>
                 </div>
@@ -93,11 +148,11 @@
             <div class="card21">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products/product-bag-700x500.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-white">
                         <button class="sale">SALE!</button>
                         <div class="txtCard">
-                            <h5 class="card-title">Women Bag</h5>
-                            <p class="card-text"><span>$420.00</span>$350.00</p>
+                            <h5 class="card-title text-dark">Women Bag</h5>
+                            <p class="card-text"><span>$420.00</span> $350.00</p>
                         </div>
                     </div>
                 </div>
@@ -105,8 +160,8 @@
             <div class="card1">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products/product-tshitr-700x500.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Minimal T-Shirt</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Minimal T-Shirt</h5>
                       <p class="card-text">$15.00</p>
                     </div>
                 </div>
@@ -114,8 +169,8 @@
             <div class="card23">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products_mini/product-plates.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Plates Set</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Plates Set</h5>
                       <p class="card-text">$30.00</p>
                     </div>
                 </div>
@@ -125,8 +180,8 @@
             <div class="card1">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products_mini/product-modern-sofa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Modern Sofa</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Modern Sofa</h5>
                       <p class="card-text">$900.00</p>
                     </div>
                 </div>
@@ -134,8 +189,8 @@
             <div class="card1">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products_mini/product-bed.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Bed Linen</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Bed Linen</h5>
                       <p class="card-text">$79.00</p>
                     </div>
                 </div>
@@ -143,75 +198,118 @@
             <div class="card33">
                 <div class="card" style="width: 18rem;">
                     <img src="./public/img/products/product-shoes-700x500.jpg" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Minimal Shoes</h5>
+                    <div class="card-body bg-white">
+                      <h5 class="card-title text-dark">Minimal Shoes</h5>
                       <p class="card-text">$60.00</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="secDiscover">
+
+    <!-- 3ème section: Discover -->
+    <section class="secDiscover" id="discover">
         <p>Discover Thousands Of Great Products</p>
         <button>LEARN MORE</button>
     </section>
-    <section class="secHot">
+
+    <!-- 4ème section: Caroussel -->
+    <section class="secHot bg-white d-flex flex-column" id="element">
+        <h3 class="text-center text-dark">Hot Fashion Products</h3>
         <div class="divCaroussel">
-            <h3>Hot Fashion Products</h3>
-            <div class="cardsCaroussel">
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Luxury Sofa</h5>
-                        <p class="card-text">$600.00</p>
+            <div class="img img1">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa" class="w-100">
+                </div>
+                <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                    <span class="text-dark">Luxury Sofa</span>
+                    <span class="text-red">$600.00</span>
+                </div>
+            </div>
+            <div class="img img2">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="sofa" class="w-100">
+                </div>
+                <div class="cardTxt d-flex justify-content-center align-items-center">
+                    <div class="btnR bg-red d-flex align-items-center justify-content-center me-4 mt-4">
+                        <p class="sale bg-red text-white">SALE!</p>
+                    </div>
+                    <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                        <span class="text-dark mt-4">Leather Gloves</span>
+                        <span>
+                            <span class="spanP text-decoration-line-through">$34.00</span>
+                            <span class="text-red">$27.00</span>
+                        </span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-gloves.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Leather Gloves</h5>
-                        <p class="card-text"><span>$34.00</span>$27.00</p>
+            </div>
+            <div class="img img3">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="bowl" class="w-100">
+                </div>
+                <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                    <span class="text-dark mt-4">Colorful Bowl</span>
+                    <span class="text-red">$18.00</span>
+                </div>
+            </div>
+            <div class="img img4">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-bag.jpg" alt="sac" class="w-100">
+                </div>
+                <div class="cardTxt d-flex justify-content-center align-items-center">
+                    <div class="btnR bg-red d-flex align-items-center justify-content-center me-4 mt-4" >
+                        <p class="sale bg-red text-white p-0 m-0">SALE!</p>
+                    </div>
+                    <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                        <span class="text-dark">Women Bag</span>
+                        <span>
+                            <span class="spanP text-decoration-line-through">$420.00</span>
+                            <span class="text-red">$350.00</span>
+                        </span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-cups.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Colorful Bowl</h5>
-                        <p class="card-text">$18.00</p>
-                    </div>
+            </div>
+            <div class="img img5">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="shirt" class="w-100">
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-bag.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Women Bag</h5>
-                        <p class="card-text"><span>$420.00</span>$350.00</p>
-                    </div>
+                <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                    <span class="text-dark mt-4">Minimal T-Shirt</span>
+                    <span class="text-red">$15.00</span>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-tshitr.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Minimal T-Shirt</h5>
-                        <p class="card-text">$15.00</p>
-                    </div>
+            </div>
+            <div class="img img6">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-plates.jpg" alt="plates" class="w-100">
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-plates.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Plates Set</h5>
-                        <p class="card-text">$30.00</p>
-                    </div>
+                <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                    <span class="text-dark mt-4">Plate Set</span>
+                    <span class="text-red">$30.00</span>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./public/img/products_mini/product-modern-sofa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Sofa</h5>
-                        <p class="card-text">$900.00</p>
-                    </div>
+            </div>
+            <div class="img img7">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-shoes.jpg" alt="shoes" class="w-100">
                 </div>
-            </div> 
+                <div class="cardTxt d-flex flex-column justify-content-center align-items-center">
+                    <span class="text-dark">Minimal Shoes</span>
+                    <span class="text-red">$60.00</span>
+                </div>
+            </div>
+            <div class="divIndicators">
+                <span class="bg-light myIndic indic"></span>
+                <span class="bg-light myIndic1 indic"></span>
+                <span class="bg-light myIndic2 indic"></span>
+                <span class="bg-light myIndic3 indic"></span>
+                <span class="bg-light myIndic4 indic"></span>
+                <span class="bg-light myIndic5 indic"></span>
+                <span class="bg-light myIndic6 indic"></span>
+            </div>
         </div>
     </section>
-    <section class="secCheck">
+
+    <!-- Dernière section: card Check -->
+    <section class="secCheck bg-white" id="about">
         <div class="divCheck">
             <div class="checkGauche">
                 <i class="far fa-check-circle"></i>
@@ -233,6 +331,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <div class="divGrise">
             <div class="about">
@@ -269,7 +369,7 @@
 
 
     
-    <script src="./src/js/main.js"></script>
+    <script src="./src/js/main.js" type="module"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
